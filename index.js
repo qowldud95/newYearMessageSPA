@@ -26,4 +26,13 @@ window.onload = () => {
   })
 }
 
+const entryPoint=document.querySelector('#home-app')
+console.log(entryPoint);
 
+const btn = document.querySelector('#newRegBtn')
+console.log(btn);
+
+
+btn.addEventListener('click',(evt) => {
+  console.log(document)
+})

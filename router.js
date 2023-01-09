@@ -17,9 +17,10 @@ const routes = {
 // entry point
 function initialRoutes (el) {
     renderHTML(el, routes['/'])
-
+    
     window.addEventListener('hashchange', () => {
         return renderHTML(el, getHashRoute())
+
     })
  
 }
@@ -49,5 +50,5 @@ function renderHTML (el, route) {
 
 module.exports = {
   initialRoutes,
-  hashRouterPush
+  hashRouterPush,
 }
